@@ -11,22 +11,73 @@
 
 package ecos.centralizador.persistence;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import ecos.centralizador.model.Ciudadano;
+import ecos.centralizador.model.EstadoCivil;
+import ecos.centralizador.model.Genero;
+import ecos.centralizador.model.TipoIdentificacion;
 
 /**
  * Clase que se encarga de manejar la persistencia
  * de la entidad Ciudadanos desde y hacia la base de datos
  *
  */
-public class GestorCiudadanos
+public class GestorCiudadanos implements IGestorCiudadanos
 {
-	public Ciudadano getCiudadano()
+
+	@Override
+	public Ciudadano obtenerCiudadano(Integer id)
 	{
-		/*
-		 * TODO: obtener el objeto del ciudadano desde la
-		 * base de datos 
-		 */
-		return null;
+		// TODO Auto-generated method stub
+		return testCiudadano();
 	}
+
+	@Override
+	public Ciudadano obtenerCiudadano(String numDocumento)
+	{
+		// TODO Retornar un ciudadano
+		return testCiudadano();
+	}
+
+	@Override
+	public void guardarCiudadano(Ciudadano nuevoCiudadano)
+	{
+		// TODO Guardar un ciudadano nuevo o sus datos si ya existe
+		
+	}
+	
+	private Ciudadano testCiudadano() {
+		Ciudadano test = new Ciudadano();
+		test.setIdCiudadano(1);
+		test.setUniqueId("001");
+		test.setTipoIdCiudadano(TipoIdentificacion.CEDULA_CIUDADANIA);
+		test.setNumeroIdentificacion("80852789");
+		test.setPrimerNombre("Daniel");
+		test.setSegundoNombre("Felipe");
+		test.setPrimerApellido("Renteria");
+		test.setSegundoApellido("Martinez");
+		test.setGenero(Genero.HOMBRE);
+		test.setEstadoCivil(EstadoCivil.CASADO);
+		
+		Calendar fechaNac = Calendar.getInstance();
+		fechaNac.set(Calendar.YEAR, 1985);
+		fechaNac.set(Calendar.MONDAY, 5);
+		fechaNac.set(Calendar.DAY_OF_MONTH, 7);
+		test.setFechaNacimiento(fechaNac.getTime());
+		
+		Calendar fechaExpDoc = Calendar.getInstance();
+		fechaExpDoc.set(Calendar.YEAR, 2003);
+		fechaExpDoc.set(Calendar.MONDAY, 5);
+		fechaExpDoc.set(Calendar.DAY_OF_MONTH, 13);
+		test.setFechaExpDocumento(fechaExpDoc.getTime());
+		
+		test.setTelefonoFijo("4537964");
+		test.setTelefonoCelular("3012649514");
+		
+		return test;
+	}
+	
 }
 

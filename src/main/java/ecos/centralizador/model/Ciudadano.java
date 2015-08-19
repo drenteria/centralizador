@@ -1,6 +1,7 @@
 package ecos.centralizador.model;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -12,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 public class Ciudadano {
 	
-	private int idCiudadano;
+	private Integer idCiudadano;
 	
 	private String uniqueId;
 	
@@ -45,13 +46,15 @@ public class Ciudadano {
 	private String telefonoCelular;
 	
 	private EstadoCivil estadoCivil;
+	
+	private List<Direccion> direcciones;
 
-	public int getIdCiudadano()
+	public Integer getIdCiudadano()
 	{
 		return idCiudadano;
 	}
 
-	public void setIdCiudadano(int idCiudadano)
+	public void setIdCiudadano(Integer idCiudadano)
 	{
 		this.idCiudadano = idCiudadano;
 	}
@@ -184,6 +187,16 @@ public class Ciudadano {
 	public void setEstadoCivil(EstadoCivil estadoCivil)
 	{
 		this.estadoCivil = estadoCivil;
+	}
+
+	public List<Direccion> getDirecciones()
+	{
+		return direcciones;
+	}
+
+	public void setDirecciones(List<Direccion> direcciones)
+	{
+		this.direcciones = direcciones;
 	}
 
 }
