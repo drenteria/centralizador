@@ -9,15 +9,15 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.service;
+package ecos.centralizador.ruu.service;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import ecos.centralizador.model.Ciudadano;
-import ecos.centralizador.persistence.GestorCiudadanos;
+import ecos.centralizador.ruu.model.Ciudadano;
+import ecos.centralizador.ruu.persistence.GestorCiudadanos;
 
 /**
  * Clase que administra los servicios REST

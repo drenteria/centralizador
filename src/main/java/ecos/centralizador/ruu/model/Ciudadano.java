@@ -1,4 +1,4 @@
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.model;
 
 import java.util.Date;
 import java.util.List;

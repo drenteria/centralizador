@@ -9,10 +9,10 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.model;
 
 /**
- * Enumeración para los tipos de direcciones
+ * Enumeracion para los tipos de direcciones
  * posibles a registrar
  *
  */

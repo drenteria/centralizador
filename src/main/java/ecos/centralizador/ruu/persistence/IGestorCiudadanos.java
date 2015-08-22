@@ -9,18 +9,16 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.persistence;
 
-/**
- * Enumeración que registra los posibles
- * estados civiles de una persona
- */
-public enum EstadoCivil
+import ecos.centralizador.ruu.model.Ciudadano;
+
+public interface IGestorCiudadanos
 {
-	SOLTERO,
-	CASADO,
-	UNION_LIBRE,
-	SEPARADO,
-	VIUDO;
+	public Ciudadano obtenerCiudadano(Integer id);
+	
+	public Ciudadano obtenerCiudadano(String numDocumento);
+	
+	public void guardarCiudadano(Ciudadano nuevoCiudadano);
 }
 

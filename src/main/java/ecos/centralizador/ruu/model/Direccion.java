@@ -9,10 +9,10 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.model;
 
 /**
- * Clase que encapsula la dirección de un ciudadano
+ * Clase que encapsula la direccion de un ciudadano
  *
  */
 public class Direccion

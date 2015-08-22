@@ -9,15 +9,15 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.persistence;
+package ecos.centralizador.ruu.persistence;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import ecos.centralizador.model.Ciudadano;
-import ecos.centralizador.model.EstadoCivil;
-import ecos.centralizador.model.Genero;
-import ecos.centralizador.model.TipoIdentificacion;
+import ecos.centralizador.ruu.model.Ciudadano;
+import ecos.centralizador.ruu.model.EstadoCivil;
+import ecos.centralizador.ruu.model.Genero;
+import ecos.centralizador.ruu.model.TipoIdentificacion;
 
 /**
  * Clase que se encarga de manejar la persistencia

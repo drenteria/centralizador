@@ -1,7 +1,7 @@
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.model;
 
 /**
- * Enumeración que define los tipos de identificación
+ * Enumeracion que define los tipos de identificacion
  * que puede poseer un ciudadano colombiano para la carpeta ciudadana
  * Nota: Se consideran algunos que probablemente no se usen
  *

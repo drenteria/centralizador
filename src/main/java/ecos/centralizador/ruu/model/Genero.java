@@ -9,11 +9,11 @@
  you entered with ACI Worldwide Inc.
  */
 
-package ecos.centralizador.model;
+package ecos.centralizador.ruu.model;
 
 /**
- * Enumeración que corresponde al 
- * género de un ciudadano
+ * Enumeracion que corresponde al 
+ * genero de un ciudadano
  *
  */
 public enum Genero
