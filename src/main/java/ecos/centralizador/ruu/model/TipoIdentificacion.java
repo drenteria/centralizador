@@ -1,33 +1,49 @@
 package ecos.centralizador.ruu.model;
 
-/**
- * Enumeracion que define los tipos de identificacion
- * que puede poseer un ciudadano colombiano para la carpeta ciudadana
- * Nota: Se consideran algunos que probablemente no se usen
- *
- */
-public enum TipoIdentificacion {
-	CEDULA_CIUDADANIA (1, "CC"),
-	CEDULA_EXTRANJERIA (2, "CE"),
-	PASAPORTE (3, "PS"),
-	NUIP (4, "NUIP"),
-	TARJETA_IDENTIDAD (5, "TI"),
-	REGISTRO_CIVIL (6, "RC"),
-	PERMISO_DIPLOMATICO (7, "PD");
+public class TipoIdentificacion {
 	
 	private Integer id;
+	
+	private String nombre;
+	
 	private String abreviatura;
 	
-	private TipoIdentificacion(Integer id, String abreviatura) {
+	public TipoIdentificacion(){
+		this.id = 0;
+		this.nombre = "Sin_Nombre";
+		this.abreviatura = "N/A";
+	}
+	
+	public TipoIdentificacion(Integer id, String nombre, 
+			String abreviatura){
+		super();
 		this.id = id;
+		this.nombre = nombre;
 		this.abreviatura = abreviatura;
 	}
-	
+
 	public Integer getId() {
-		return this.id;
+		return id;
 	}
-	
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
 	public String getAbreviatura() {
-		return this.abreviatura;
+		return abreviatura;
 	}
+
+	public void setAbreviatura(String abreviatura) {
+		this.abreviatura = abreviatura;
+	}
+
 }

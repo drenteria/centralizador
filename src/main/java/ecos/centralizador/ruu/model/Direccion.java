@@ -19,7 +19,7 @@ public class Direccion
 {
 	private Integer idDireccion;
 	
-	private TipoDireccion tipoDireccion;
+	//private TipoDireccion tipoDireccion;
 	
 	private String direccion;
 	
@@ -33,16 +33,6 @@ public class Direccion
 	public void setIdDireccion(Integer idDireccion)
 	{
 		this.idDireccion = idDireccion;
-	}
-
-	public TipoDireccion getTipoDireccion()
-	{
-		return tipoDireccion;
-	}
-
-	public void setTipoDireccion(TipoDireccion tipoDireccion)
-	{
-		this.tipoDireccion = tipoDireccion;
 	}
 
 	public String getDireccion()
