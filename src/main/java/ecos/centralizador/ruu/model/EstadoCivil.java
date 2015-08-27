@@ -1,8 +1,5 @@
 package ecos.centralizador.ruu.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-@JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum EstadoCivil {
 	
 	SOLTERO (1, "Soltero(a)"),
