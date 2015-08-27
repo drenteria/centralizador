@@ -39,7 +39,7 @@ public class Ciudadano {
 	
 	//TODO: private Municipio municipioNacimiento;
 	
-	//TODO: private Pais paisNacionalidad;
+	private Pais paisNacionalidad;
 	
 	private String telefonoFijo;
 	

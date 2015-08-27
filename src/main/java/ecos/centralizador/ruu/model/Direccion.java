@@ -19,7 +19,7 @@ public class Direccion
 {
 	private Integer idDireccion;
 	
-	//private TipoDireccion tipoDireccion;
+	private TipoDireccion tipoDireccion;
 	
 	private String direccion;
 	
@@ -53,6 +53,14 @@ public class Direccion
 	public void setEsCorrespondencia(Boolean esCorrespondencia)
 	{
 		this.esCorrespondencia = esCorrespondencia;
+	}
+
+	public TipoDireccion getTipoDireccion() {
+		return tipoDireccion;
+	}
+
+	public void setTipoDireccion(TipoDireccion tipoDireccion) {
+		this.tipoDireccion = tipoDireccion;
 	}
 }
 
