@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 public enum EstadoCivil {
 	
 	SOLTERO (1, "Soltero(a)"),
-	CASADO (1, "Casado(a)"),
-	UNION_LIBRE (1, "Union Libre"),
-	DIVORCIADO (1, "Divorciado(a)"),
-	VIUDO (1, "Viudo(a)");
+	CASADO (2, "Casado(a)"),
+	UNION_LIBRE (3, "Union Libre"),
+	DIVORCIADO (4, "Divorciado(a)"),
+	VIUDO (5, "Viudo(a)");
 	
 	private Integer id;
 	
